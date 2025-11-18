@@ -1,0 +1,135 @@
+/* Simple reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Page layout */
+:root{
+  --bg: #f7fafc;
+  --card: #ffffff;
+  --muted: #6b7280;
+  --accent: #2563eb; /* blue-600 */
+  --accent-2: #ef4444; /* red-500 */
+  --radius: 12px;
+  --max-width: 920px;
+  --gap: 18px;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial;
+}
+
+/* App container */
+.app {
+  min-height: 100vh;
+  background: linear-gradient(180deg, var(--bg), #ffffff);
+  padding: 32px 16px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Content column */
+.app-inner {
+  width: 100%;
+  max-width: var(--max-width);
+}
+
+/* Page header */
+.app-inner > h1 {
+  font-size: 1.6rem;
+  margin-bottom: 12px;
+  color: #111827;
+}
+
+/* Section */
+section {
+  background: var(--card);
+  border-radius: var(--radius);
+  padding: 16px;
+  box-shadow: 0 6px 20px rgba(15, 23, 42, 0.06);
+  margin-bottom: var(--gap);
+}
+
+/* Section heading */
+section h2 {
+  font-size: 1.05rem;
+  margin-bottom: 10px;
+  color: #0f172a;
+}
+
+/* Smaller headings inside components */
+h3 {
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+  color: #0f172a;
+}
+
+/* Sub text */
+p, li {
+  color: var(--muted);
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+
+/* Lists */
+ul {
+  padding-left: 18px;
+  margin-bottom: 8px;
+}
+
+/* Cards for simple outputs like greetings */
+.card {
+  background: linear-gradient(180deg, #fff, #fbfdff);
+  border-radius: 8px;
+  padding: 10px 12px;
+  display: inline-block;
+  margin: 8px 0;
+  border: 1px solid rgba(15, 23, 42, 0.04);
+  color: #0f172a;
+}
+
+/* Buttons */
+button {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: transform .08s ease, box-shadow .08s ease;
+}
+button:hover { transform: translateY(-1px); box-shadow: 0 8px 20px rgba(37,99,235,0.12); }
+button:active { transform: translateY(0); }
+
+/* Preformatted code / JSON */
+pre {
+  background: #0f172a;
+  color: #e6eef8;
+  padding: 12px;
+  border-radius: 8px;
+  overflow: auto;
+  font-size: 0.9rem;
+  margin-top: 8px;
+}
+
+/* Images (avatar example) */
+img {
+  border-radius: 8px;
+  display: block;
+  margin-top: 8px;
+  max-width: 100%;
+}
+
+/* Utility small text */
+.small {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .app-inner { padding: 0 8px; }
+  section { padding: 12px; }
+  .app-inner > h1 { font-size: 1.3rem; }
+}
