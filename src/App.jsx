@@ -1,47 +1,24 @@
-import FunctionDeclaration from "./components/FunctionDeclaration";
-import ArrowFunction from "./components/ArrowFunction";
-import ArrayMap from "./components/ArrayMap";
-import UseStateExample from "./components/UseStateExample";
-import PropsExample from "./components/PropsExample";
-import ConditionalRendering from "./components/ConditionalRendering";
-import ListRendering from "./components/ListRendering";
-import "./index.css";
-
-// export default function App() {
-//   return (
-//     <>
-//       <FunctionDeclaration />
-//       <ArrowFunction />
-//       <ArrayMap />
-//       <UseStateExample />
-//       <PropsExample />
-//       <ConditionalRendering />
-//       <ListRendering />
-//     </>
-//   );
-// }
+import Topic1_Functions from "./components/Topic1_Functions";
+import Topic2_TemplateLiterals from "./components/Topic2_TemplateLiterals";
+import Topic3_Conditionals from "./components/Topic3_Conditionals";
+import Topic4_ArrayMethods from "./components/Topic4_ArrayMethods";
+import Topic5_ObjectTricks from "./components/Topic5_ObjectTricks";
+import Topic6_AsyncAwait from "./components/Topic6_AsyncAwait";
+import Topic7_ESModules from "./components/Topic7_ESModules";
+import "./app.css";
 
 export default function App() {
   return (
-    <div className="app">
-      <div className="app-inner">
-        <h1>React Basic Examples</h1>
-        <section>
-          <h2>1. Components</h2>
-          <FunctionDeclaration />
-          <ArrowFunction />
-        </section>
+    <div>
+      <h1>All JavaScript Topics</h1>
 
-        <section>
-          <h2>2. Other examples</h2>
-          <ArrayMap />
-          <UseStateExample />
-          <PropsExample />
-          <ConditionalRendering />
-          <ListRendering />
-        </section>
-      </div>
+      <Topic1_Functions />
+      <Topic2_TemplateLiterals />
+      <Topic3_Conditionals />
+      <Topic4_ArrayMethods />
+      <Topic5_ObjectTricks />
+      <Topic6_AsyncAwait />
+      <Topic7_ESModules />
     </div>
   );
 }
-
